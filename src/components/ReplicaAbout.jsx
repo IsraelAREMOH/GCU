@@ -13,12 +13,10 @@ function ReplicaAbout() {
   return (
     <section className="relative w-full bg-white overflow-hidden">
       {/* TOP IMAGE */}
-      {/* TOP IMAGE */}
       <div
         className="h-[300px] w-full bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80')",
+          backgroundImage: "url('/images/GCU77.jpeg')",
         }}
       />
 
@@ -102,8 +100,7 @@ function ReplicaAbout() {
           <div
             className="h-[240px] sm:h-[280px] md:h-[300px] lg:h-[320px] w-full bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80')",
+              backgroundImage: "url('/images/GCU88.jpeg')",
             }}
           />
 

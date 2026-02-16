@@ -1,9 +1,5 @@
-import PHOTO_21 from "../assets/PHOTO_21.jpg";
-import PHOTO_32 from "../assets/PHOTO_32.jpg";
-import G_star from "../assets/G_star.jpg";
-import Studio_session from "../assets/Studio_session.jpg";
 import { BriefcaseBusiness, Laugh, Star } from "Lucide-react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -19,62 +15,65 @@ const fadeInUp = {
 };
 
 const AboutUsSection = () => {
-  const images = [G_star, Studio_session, PHOTO_21, PHOTO_32];
+  const images = [
+    "images/GCU30.webp",
+    "images/coachspace.jpg",
+    "images/GCU16.webp",
+    "images/image5.jpg",
+  ];
 
   return (
     <section className="w-full bg-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         {/* Left Section */}
-        <motion.div
+        <Motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h3
-            className="text-[#19673b] font-semibold text-lg mb-2"
+          <Motion.h3
+            className="text-[#02066F] font-semibold text-lg mb-2"
             variants={fadeInUp}
             custom={1}
           >
-            About GMLawason
-          </motion.h3>
-          <motion.h1
+            About GCUEnterprice
+          </Motion.h3>
+          <Motion.h1
             className="text-2xl md:text-2xl font-bold text-gray-400 mb-6 leading-tight"
             variants={fadeInUp}
             custom={2}
           >
             Passion Delivered In Excellence
-          </motion.h1>
-          <motion.p
+          </Motion.h1>
+          <Motion.p
             className="mt-6 text-gray-600 mb-6 leading-relaxed"
             variants={fadeInUp}
             custom={3}
           >
-            At GM LAWASON STUDIOS, we turn moments into masterpieces.
-            Specializing in high-quality photography and cinematography, we
-            blend creativity with technical excellence to bring your vision to
-            life.
-          </motion.p>
-          <motion.p
+            With more than 25 years of experience in Corporate Advisory, Trade,
+            Production and Capital Markets, we know just what you need.
+          </Motion.p>
+          <Motion.p
             className="mt-6 text-gray-600 mb-6 leading-relaxed"
             variants={fadeInUp}
             custom={4}
           >
-            With a passion for storytelling and cutting-edge equipment, we
-            deliver stunning visuals that captivate and inspire. Whether it’s a
-            brand project, event, or personal shoot, we ensure every frame tells
-            a story worth remembering.
-          </motion.p>
-          <motion.p
+            As an integrated firm across corporate advisory, trade, production,
+            and capital markets, we combine strategic insight, operational
+            excellence, and capital markets expertise to deliver dependable
+            solutions and long-term value for our stakeholders.
+          </Motion.p>
+          <Motion.p
             className="font-bold text-gray-600"
             variants={fadeInUp}
             custom={5}
           >
-            Your vision. Our lens. Unforgettable results.
-          </motion.p>
-        </motion.div>
+            Think Smart. Execute Strong.
+          </Motion.p>
+        </Motion.div>
 
         {/* Right Image Section */}
-        <motion.div
+        <Motion.div
           className="flex flex-col min-h-[400px]"
           initial="hidden"
           whileInView="visible"
@@ -82,7 +81,7 @@ const AboutUsSection = () => {
         >
           <div className="grid grid-cols-2 gap-0">
             {images.map((src, index) => (
-              <motion.div
+              <Motion.div
                 key={index}
                 className="overflow-hidden h-48"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -99,59 +98,59 @@ const AboutUsSection = () => {
                   alt={`Team ${index}`}
                   className="object-cover w-full h-full transition-all duration-300"
                 />
-              </motion.div>
+              </Motion.div>
             ))}
           </div>
-          <div className="w-full h-6 bg-[#19673b] mt-4 rounded-b-lg"></div>
-        </motion.div>
+          <div className="w-full h-6 bg-[#02066F] mt-4 rounded-b-lg"></div>
+        </Motion.div>
 
         {/* Stats Section */}
-        <motion.div
+        <Motion.div
           className="md:col-span-2 flex flex-wrap items-center justify-center gap-10 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.div
+          <Motion.div
             className="flex items-center gap-2"
             variants={fadeInUp}
             custom={1}
           >
-            <BriefcaseBusiness className="text-[#19673b] text-4xl" />
-            <span className="text-[#19673b] font-semibold text-xl">15+</span>
-            <span className="text-base text-[#19673b] font-semibold">
+            <BriefcaseBusiness className="text-[#02066F] text-4xl" />
+            <span className="text-[#02066F] font-semibold text-xl">25+</span>
+            <span className="text-base text-[#02066F] font-semibold">
               Years In Business
             </span>
-          </motion.div>
+          </Motion.div>
 
-          <motion.div
+          <Motion.div
             className="flex items-center gap-2"
             variants={fadeInUp}
             custom={2}
           >
-            <Laugh className="text-[#19673b] text-4xl" />
-            <span className="text-[#19673b] font-semibold text-xl">500+</span>
-            <span className="text-base text-[#19673b] font-semibold">
+            <Laugh className="text-[#02066F] text-4xl" />
+            <span className="text-[#02066F] font-semibold text-xl">1000+</span>
+            <span className="text-base text-[#02066F] font-semibold">
               Happy Clients
             </span>
-          </motion.div>
+          </Motion.div>
 
-          <motion.div
+          <Motion.div
             className="flex items-center gap-1"
             variants={fadeInUp}
             custom={3}
           >
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="text-[#19673b] text-4xl" />
+              <Star key={i} className="text-[#02066F] text-4xl" />
             ))}
-            <span className="text-[#19673b] font-semibold text-xl ml-2">
+            <span className="text-[#02066F] font-semibold text-xl ml-2">
               5/5.0
             </span>
-            <span className="text-base text-[#19673b] font-semibold">
+            <span className="text-base text-[#02066F] font-semibold">
               Rating
             </span>
-          </motion.div>
-        </motion.div>
+          </Motion.div>
+        </Motion.div>
       </div>
     </section>
   );

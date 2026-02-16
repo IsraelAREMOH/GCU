@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const Service = () => {
   return (
@@ -12,17 +12,24 @@ const Service = () => {
       <section className="bg-gray-900 text-white text-center py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-2xl font-semibold">
-            What we <span className="text-[#F66304]">Offer</span>
+            What we <span className="text-[#02066F]">Offer</span>
             <div className="flex justify-center mt-2">
-              <div className="relative w-20 h-1 bg-[#f66304] rounded-full">
-                <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#f66304] rounded-full"></div>
-                <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#f66304] rounded-full"></div>
+              <div className="relative w-20 h-1 bg-[#02066F] rounded-full">
+                <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#02066F] rounded-full"></div>
+                <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#02066F] rounded-full"></div>
               </div>
             </div>
           </h2>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-            At GM LAWSON STUDIOS, your vision is our canvas, and we are
-            committed to making every project an unforgettable masterpiece
+            GCU Enterprise has worked to provide wise counsel to individuals,
+            families, and businesses. A fee-only, independent RIA firm, we offer
+            investment management, financial planning, Trade, and family office
+            services to financially established individuals and institutions.We
+            also offer corporate accounting, tax preparation, payroll and
+            consulting through our affiliate, GCU Finance Tax & Consulting. As
+            of May 31, 2025, GCU Enterprise held approximately $100 billion in
+            assets under management and $23.79 billion in assets under
+            advisement.
           </p>
 
           {/* Swiper */}
@@ -42,16 +49,27 @@ const Service = () => {
                   slidesPerView: 3,
                 },
               }}
+              onInit={(swiper) => {
+                if (swiper.slides.length <= swiper.params.slidesPerView) {
+                  // hide arrows if everything fits
+                  document
+                    .querySelector(".custom-prev")
+                    ?.style.setProperty("display", "none");
+                  document
+                    .querySelector(".custom-next")
+                    ?.style.setProperty("display", "none");
+                }
+              }}
             >
-              <div className="custom-next text-[#19673b] absolute right-2 top-1/2 z-10 cursor-pointer">
+              <div className="custom-next text-[#02066F] absolute right-2 top-1/2 z-10 cursor-pointer">
                 ▶
               </div>
-              <div className="custom-prev text-[#19673b] absolute left-2 top-1/2 z-10 cursor-pointer">
+              <div className="custom-prev text-[#02066F] absolute left-2 top-1/2 z-10 cursor-pointer">
                 ◀
               </div>
               {services.map((service, index) => (
                 <SwiperSlide key={index}>
-                  <motion.div
+                  <Motion.div
                     className="h-full flex"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +97,7 @@ const Service = () => {
                         >
                           <path
                             d="M2 6C15 2 30 10 45 8C60 6 75 2 78 2"
-                            stroke="#f97316"
+                            stroke="#2519BC"
                             strokeWidth="4"
                             strokeLinecap="round"
                           />
@@ -87,7 +105,7 @@ const Service = () => {
                       </div>
 
                       {/* Image Section */}
-                      <motion.div
+                      <Motion.div
                         className="w-full md:w-1/3 mt-4 md:mt-0 flex justify-center"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -99,9 +117,9 @@ const Service = () => {
                           alt={service.title}
                           className="object-cover h-40 w-full rounded-lg"
                         />
-                      </motion.div>
+                      </Motion.div>
                     </div>
-                  </motion.div>
+                  </Motion.div>
                 </SwiperSlide>
               ))}
             </Swiper>

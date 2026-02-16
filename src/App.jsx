@@ -11,8 +11,8 @@ import Service from "./container/service/Service";
 import Project from "./container/project/Project";
 import Contact from "./container/contact/Contact";
 import PageFooter from "./components/PageFooter";
-import Brandsection from "./components/Brandsection";
 import Herosection from "./components/Herosection";
+import ScrollHandler from "./components/ScrollHandler";
 
 const AppLayout = () => {
   const location = useLocation();
@@ -21,18 +21,20 @@ const AppLayout = () => {
     <>
       <Navbar />
       {/* Conditionally render HeroSection */}
-      {location.pathname !== "/contact" && <Herosection />}
+
+      {!["/contact", "/about"].includes(location.pathname) && <Herosection />}
+
+      <ScrollHandler />
 
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
-        <Route path="/projects" element={<Project />} />
+        <Route path="/what we offer" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <Brandsection />
       <PageFooter />
     </>
   );

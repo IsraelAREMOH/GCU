@@ -1,55 +1,49 @@
-import PHOTO_2 from "../assets/PHOTO_2.jpg";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
+import RadialDiagram from "./test";
 
 const About_studioLighting = () => {
   return (
     <div>
-      <section className="bg-[#1e1e1e] text-white py-12 px-6">
+      <section className="bg-gray-900 text-white py-12 px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 max-w-7xl mx-auto">
           {/* Left image */}
-          <motion.img
-            src={PHOTO_2}
-            alt="Image 4"
-            className="w-full md:w-1/2 h-[450px] object-cover rounded-lg shadow-lg"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true, amount: 0.3 }}
-          />
+
+          <RadialDiagram />
 
           {/* Text Content */}
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: true, amount: 0.3 }}
             className="md:w-1/2 justify-center"
           >
-            <h2 className="text-3xl font-bold mb-2">Studio Lighting</h2>
+            <h2 className="text-3xl text-[#fff] font-bold mb-2">
+              A Framework for Effective Risk Management
+            </h2>
             <p className="mb-4 text-gray-300">
-              Lighting isn't just about visibility - it's about creating mood,
-              shaping emotion, and defining the story. At GM LAWASONSTUDIOS, we
-              treat lighting as an art form and technical foundation, using
-              professional-grade equipment to sculpt each scene with precision.
+              GCU Enterprise is a Principles for Responsible Investment (“PRI”)
+              signatory. We believe a strong Responsible Investment proposition
+              correlates with thorough risk assessment and leverages insights
+              across the portfolio.
             </p>
             <p className="mb-4 text-gray-300">
-              Wether it's cinematic shoot, portrait session, product campaign,
-              or music video, our lighting setups are tailored to bring out the
-              best in every subject and setting. We offer soft, dramatic, or
-              dynamic lighting techniques depending on your project's tone -
-              using tools like softboxes, spotlights, RGB lights, and diffusion
-              panels.
+              Responsible Investment within Antares is characterized by an
+              understanding of our investor needs and collaboration with other
+              stakeholders within the asset management community. We factor in
+              the needs of our private equity sponsors and what is most relevant
+              for our borrowers. The breadth and scale of our portfolio of
+              private equity-backed companies provide a unique perspective and
+              engagement opportunities.
             </p>
             <div className="mb-4 text-gray-300">
-              Our studio is designed for full control - no surprise, just
-              consistency and creativity. With expert lighting direction and
-              technical support on hand, we ensure your visual come out looking
-              exactly as envisioned - vibrant, professional, and story-driven.
+              We also complete a Responsible Investment assessment as part of
+              the broader investment process for our Liquid Credit business.
             </div>
-            <button className="bg-[#f66304] hover:bg-[#19673b] text-white font-semibold py-2 px-4 rounded w-fit">
+            <button className="bg-[#02066f] hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded w-fit">
               Contact Us
             </button>
-          </motion.div>
+          </Motion.div>
         </div>
       </section>
     </div>

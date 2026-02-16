@@ -1,6 +1,4 @@
-import DUST_TO_DREAM from "../assets/DUST_TO_DREAM.png";
-import FAR_FROM_HOME from "../assets/FAR_FROM_HOME.png";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -23,7 +21,7 @@ const Project_MovieSec = () => {
   return (
     <div className="bg-[#f4f6ff] text-gray-900 py-12 px-4 md:px-10 lg:px-20">
       {/* Header */}
-      <motion.div
+      <Motion.div
         className="text-center mb-16"
         initial="hidden"
         whileInView="visible"
@@ -31,28 +29,28 @@ const Project_MovieSec = () => {
         variants={fadeUp}
       >
         <h2 className="text-3xl md:text-4xl text-gray-500 font-bold">
-          See the <span className="text-[#19673B]">stories</span> we've told
+          Our <span className="text-[#02066f]">Financial Services</span> For
+          Clients
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
-          Take a journey through our lens, mic and mind. Explore the moments we
-          captured, the stories we shaped and the voices we amplified.
+          We have the industry experts that you and your clients can depend on
+          when legal matters arise.
         </p>
-      </motion.div>
+      </Motion.div>
 
-      <div className="bg-[#2a2727] text-gray-500 px-4 py-12 md:px-10 lg:px-8">
-        <motion.h3
+      <div className="bg-gray-900 text-gray-500 px-4 py-12 md:px-10 lg:px-8">
+        <Motion.h3
           className="text-2xl font-semibold text-gray-500 text-center mb-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          Movies
-        </motion.h3>
+          Client Services
+        </Motion.h3>
 
-        {/* Far from Home */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 bg-[#2a2727] mb-12">
-          <motion.div
+        <div className="flex flex-col lg:flex-row items-center gap-8 bg-gray-900 mb-12">
+          <Motion.div
             className="w-full lg:w-1/2 order-2 lg:order-1"
             initial="hidden"
             whileInView="visible"
@@ -60,61 +58,61 @@ const Project_MovieSec = () => {
             variants={slideIn("left")}
           >
             <h4 className="text-xl text-gray-400 font-bold mb-4">
-              Far from home
+              Consulting Services For Your Clients
             </h4>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Far From Home is a 2022 Nigerian young adult drama series and
-              Netflix’s first original YA series from Nigeria. Produced by
-              Inkblot Productions, the five-part series follows the story of
-              Ishaya Bello (Mike Afolarin), a charismatic teenager and talented
-              artist from a poor family. His dreams suddenly appear within reach
-              when a prestigious scholarship to the most exclusive school in the
-              country catapults him into the affluent world of Nigeria’s elite.
-              All the while, a huge secret threatens Ishaya’s newfound status
-              and, ultimately, his family’s safety.
+              At GCU Enterprise, we provide consulting services like expert
+              testimony, subject matter expertise and regulatory compliance
+              consulting that law firms and their wealth management clients can
+              rely on. Our industry experts assist with compliance and
+              operations, offering services such as registration, remediation,
+              and expert witness testimony. These services are essential for law
+              firms’ clients who are starting or running an investment advisor
+              or broker-dealer firm. Our consultants are seasoned professionals
+              who have been cross examined, used for expert opinions, testimony
+              and have the industry knowledge that law firms need.
             </p>
-          </motion.div>
+          </Motion.div>
 
-          <motion.div
+          <Motion.div
             className="w-full sm:w-72 md:w-80 lg:w-96 order-1 lg:order-2"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={slideIn("right")}
           >
-            <div className="bg-black rounded-lg p-1">
-              <motion.img
-                src={FAR_FROM_HOME}
+            <div className="bg-[#02066f] rounded-lg p-1">
+              <Motion.img
+                src="images/GCU5.webp"
                 alt="Far from Home poster"
                 className="rounded w-full h-auto max-h-[400px] object-cover"
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.4 }}
               />
             </div>
-          </motion.div>
+          </Motion.div>
         </div>
 
-        {/* Dust to Dreams */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 bg-[#2a2727]">
-          <motion.div
+        <div className="flex flex-col lg:flex-row items-center gap-8 bg-gray-900">
+          <Motion.div
             className="w-full sm:w-72 md:w-80 lg:w-96"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={slideIn("left")}
           >
-            <div className="bg-black rounded-lg p-1">
-              <motion.img
-                src={DUST_TO_DREAM}
+            <div className="bg-[#02066F] rounded-lg p-1">
+              <Motion.img
+                src="images/GCU13.webp"
                 alt="Dust to Dreams poster"
                 className="rounded w-full h-auto max-h-[400px] object-cover"
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.4 }}
               />
             </div>
-          </motion.div>
+          </Motion.div>
 
-          <motion.div
+          <Motion.div
             className="w-full lg:w-1/2"
             initial="hidden"
             whileInView="visible"
@@ -122,25 +120,22 @@ const Project_MovieSec = () => {
             variants={slideIn("right")}
           >
             <h4 className="text-xl text-gray-400 font-bold mb-4">
-              Dust to dreams
+              Expert Witness and Independent Consultant
             </h4>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Dust to Dreams is an upcoming short film directed by Idris Elba.
-              Set against the vibrant backdrop of Lagos, Nigeria, the narrative
-              delves into the intricate dynamics of a family reuniting after
-              years of separation.
+              You and clients need regulatory experts that you can depend on. We
+              support you by serving as expert witnesses, independent consultant
+              in response to a regulatory finding, or any compliance needs for
+              your Registered Investment Advisor or Broker Dealer clients.
             </p>
             <p className="text-gray-300 text-sm leading-relaxed">
-              <strong className="text-gray-500">Plot Summary:</strong> The story
-              centers on Milli, a reserved teenager who meets her estranged
-              father, a long-lost soldier, for the first time. This encounter
-              strains her already fragile relationship with her mother, a
-              revered nightclub owner nearing the end of her journey. As the
-              family grapples with unresolved issues and hopes for
-              reconciliation, music emerges as a unifying force, culminating in
-              a soul-stirring duet that promises healing and redemption.
+              Our consultants possess deep expertise in compliance and
+              operations, making them invaluable in complex wealth management
+              cases or regulatory actions. The diverse backgrounds of Oyster
+              professionals add credibility to their expert opinions, which are
+              highly valued by adjudicators.
             </p>
-          </motion.div>
+          </Motion.div>
         </div>
       </div>
     </div>

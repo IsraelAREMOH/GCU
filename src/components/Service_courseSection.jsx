@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HowItWorksStep } from "../constants/useable_Functions";
 import White_Underline from "../constants/White_Underline";
 import Green_Underline from "../constants/Green_Underline";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const getEntranceVariant = (index) => {
   const directions = [
@@ -36,8 +36,8 @@ const hoverEffect = {
 
 const Service_courseSection = () => {
   return (
-    <div className="bg-[#2A2727] text-[#F4F6FF] min-h-screen py-12 px-4">
-      <motion.div
+    <div className="bg-gray-900 text-[#F4F6FF] min-h-screen py-12 px-4">
+      <Motion.div
         className="text-center mb-10 px-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -45,20 +45,19 @@ const Service_courseSection = () => {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
-          What we <span className="text-[#19673B]">Offer</span>
+          What we <span className="text-[#02066F]">Offer</span>
         </h2>
         <Green_Underline />
         <p className="max-w-1xl mx-auto pt-4 text-[#F4F6FF] text-base md:text-lg">
-          Practical, creative training built for modern storytellers. Learn from
-          professionals, gain hands-on experience, and level up your craft in a
-          space that inspires growth.
+          We’ll help you create efficient, effective policies and procedures
+          tailored to your firm’s business model.
         </p>
-      </motion.div>
+      </Motion.div>
 
       {/* Top 3 Courses */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16 px-4">
         {courses.slice(0, 3).map((course, index) => (
-          <motion.div
+          <Motion.div
             key={course.title}
             className="bg-white text-gray-500 rounded-lg p-6 flex flex-col items-center"
             variants={getEntranceVariant(index)}
@@ -79,19 +78,19 @@ const Service_courseSection = () => {
             <div className="flex text-[#F4F6FF] justify-center my-2">
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-[#19673B] to-green-500 py-3 px-4 mx-3 mb-6 rounded-md"
+                className="bg-gradient-to-r from-[#02066F] to-blue-600 py-3 px-4 mx-3 mb-6 rounded-md"
               >
                 Enroll Now
               </Link>
             </div>
-          </motion.div>
+          </Motion.div>
         ))}
       </div>
 
       {/* Additional Courses */}
       <div className="flex flex-col sm:flex-row justify-center max-w-6xl mx-auto p-6 gap-6">
         {courses.slice(3).map((course, index) => (
-          <motion.div
+          <Motion.div
             key={course.title}
             className="bg-white text-gray-500 rounded-lg p-6 flex flex-col justify-between w-full sm:w-[350px]"
             variants={getEntranceVariant(index)}
@@ -112,17 +111,17 @@ const Service_courseSection = () => {
             <div className="flex text-[#F4F6FF] justify-center my-2">
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-[#19673B] to-green-500 py-3 px-4 mx-3 rounded-md"
+                className="bg-gradient-to-r from-[#02066F] to-blue-600 py-3 px-4 mx-3 rounded-md"
               >
                 Enroll Now
               </Link>
             </div>
-          </motion.div>
+          </Motion.div>
         ))}
       </div>
 
       {/* How It Works Section */}
-      <motion.div
+      <Motion.div
         className="text-center px-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -136,12 +135,12 @@ const Service_courseSection = () => {
 
         <div className="relative flex flex-col sm:flex-row justify-center items-center gap-10 my-10">
           {[
-            "Choose your course",
-            "Attend On-site",
-            "Build Real Projects",
-            "Earn Certificate",
+            "Choose your Service",
+            "Contact and Register",
+            "Build Real Wealth",
+            "Earn and Grow",
           ].map((step, i) => (
-            <motion.div
+            <Motion.div
               key={i}
               variants={getEntranceVariant(i)}
               initial="hidden"
@@ -150,10 +149,10 @@ const Service_courseSection = () => {
               {...hoverEffect}
             >
               <HowItWorksStep number={String(i + 1)} text={step} />
-            </motion.div>
+            </Motion.div>
           ))}
         </div>
-      </motion.div>
+      </Motion.div>
     </div>
   );
 };

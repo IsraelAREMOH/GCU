@@ -67,17 +67,17 @@ const Contact_FormSection = () => {
   };
   return (
     <div>
-      <div className="bg-[#2A2727] text-[#f4f6ff] min-h-screen px-4 py-8 sm:px-6 lg:px-8">
+      <div className="bg-[#0B102A] text-[#f4f6ff] min-h-screen px-4 py-8 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold">
-            Studio <span className="text-[#19673b]">Moments</span>
+            Studio <span className="text-[#02066f]">Moments</span>
           </h1>{" "}
           <p className="mt-2 text-gray-400 text-sm sm:text-base">
             Want to work with us?
             <br />
             We're always ready for the next big story. Let's collaborate.
           </p>
-          <h3 className="mt-4 px-6 py-2 font-semibold text-[#19673b] text-sm sm:text-base">
+          <h3 className="mt-4 px-6 py-2 font-semibold text-[#02066f] text-sm sm:text-base">
             Get in Touch
           </h3>
           <div className="flex mt-4 py-2 ">
@@ -86,22 +86,24 @@ const Contact_FormSection = () => {
         </div>
 
         <div className="max-w-5xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-3 mb-10">
-          <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg text-center">
-            <MapPin className="w-6 h-6 text-[#19673b] mb-2" />
-            <h3 className="font-semibold text-lg mb-1">Visit Our Studio</h3>
+          <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
+            <MapPin className="w-6 h-6 text-[#02066f] mb-2" />
+            <h3 className="font-semibold text-lg mb-1">Visit Our Office</h3>
             <p className="text-gray-400 text-sm">
-              123 Creative Lane, PhotoCity
+              AIA Tower, Avenida Commercial de Macau 251, Macau Hong Kong
             </p>
           </div>
-          <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg text-center">
-            <Phone className="w-6 h-6 text-[#19673b] mb-2" />
+          <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
+            <Phone className="w-6 h-6 text-[#02066f] mb-2" />
             <h3 className="font-semibold text-lg mb-1">Talk to a Specialist</h3>
-            <p className="text-gray-400 text-sm">+234 801 234 5678</p>
+            <p className="text-gray-400 text-sm">+16282540690</p>
           </div>
-          <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg text-center">
-            <Mail className="w-6 h-6 text-[#19673b] mb-2" />
+          <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
+            <Mail className="w-6 h-6 text-[#02066f] mb-2" />
             <h3 className="font-semibold text-lg mb-1">Email Studio Moments</h3>
-            <p className="text-gray-400 text-sm">contact@studiomoments.ng</p>
+            <p className="text-gray-400 text-sm">
+              customerrelation@gcuenterprise.com
+            </p>
           </div>
         </div>
 
@@ -204,7 +206,7 @@ const Contact_FormSection = () => {
               rows={5}
               required
             ></textarea>
-            <button className="md:col-span-2 mt-4 px-6 py-3 bg-[#19673B] hover:bg-green-600 text-white rounded w-full text-sm sm:text-base">
+            <button className="md:col-span-2 mt-4 px-6 py-3 bg-[#02066f] hover:bg-blue-900 text-white rounded w-full text-sm sm:text-base">
               Submit
             </button>
             {errors.length > 0 && (

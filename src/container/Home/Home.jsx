@@ -1,7 +1,8 @@
 import AboutUsSection from "../../components/AboutUsSection";
 import Service from "../../components/service";
-import CardGreen from "../../components/cardGreen";
-import TestimonialCard from "../../components/testimonialCard";
+import CardGreen from "../../components/CardGreen";
+import MarketInsights from "../../components/MarketInsights";
+import InvestmentPhilosophy from "../../components/InvestmentPhilosophy";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
         <AboutUsSection />
         <Service />
         <CardGreen />
-        <TestimonialCard />
+        <MarketInsights />
+        <InvestmentPhilosophy />
       </div>
     </>
   );

@@ -1,33 +1,3 @@
-import wifey from "../assets/wifey.jpg";
-import ose from "../assets/ose.jpg";
-import jenny from "../assets/jenny.jpg";
-import camera from "../assets/camera.jpg";
-import PHOTO_3 from "../assets/PHOTO_3.jpg";
-import PHOTO_28 from "../assets/PHOTO_28.jpg";
-import PHOTO_30 from "../assets/PHOTO_30.jpg";
-import PHOTO_14 from "../assets/PHOTO_14.jpg";
-import PHOTO_31 from "../assets/PHOTO_31.jpg";
-import PHOTO_16 from "../assets/PHOTO_16.jpg";
-import PHOTO_33 from "../assets/PHOTO_33.jpg";
-import PHOTO_24 from "../assets/PHOTO_24.jpg";
-import PHOTO_35 from "../assets/PHOTO_35.jpg";
-import content from "../assets/content.jpg";
-import lightbulbs from "../assets/lightbulbs.jpg";
-import black from "../assets/black.jpg";
-import PHOTO_1 from "../assets/PHOTO_1.jpg";
-import Secretary from "../assets/Secretary.png";
-import Photographer from "../assets/Photographer.png";
-import supervisor from "../assets/supervisor.png";
-import StudioManager from "../assets/StudioManager.png";
-import ProjectCoordinator from "../assets/ProjectCoordinator.png";
-import TRUCK from "../assets/TRUCK.png";
-import PODCAST_3 from "../assets/PODCAST_3.png";
-import PODCAST2 from "../assets/PODCAST2.png";
-import PODCAST1 from "../assets/PODCAST1.png";
-import Camera_rental from "../assets/Camera_rental.png";
-import Full_production_kit from "../assets/Full_production_kit.png";
-import studio_light from "../assets/studio_light.png";
-
 import {
   Camera,
   Video,
@@ -45,194 +15,196 @@ export const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Our Services", href: "/services" },
-  { label: "Project", href: "/projects" },
+  { label: "What We Offer", href: "/what we offer" },
   { label: "Contact", href: "/contact" },
+];
+
+export const timeline = [
+  {
+    year: 1996,
+    text: "Twelve deal professionals from Heller Financial started Antares.",
+  },
+  { year: 2005, text: "GCU Enterprise acquires Antares for more than $5B." },
+  { year: 2008, text: "GCU Enterprise acquires Merrill Lynch Capital." },
+  {
+    year: 2015,
+    text: "Canada Pension Plan Investment Board acquires GCU’s sponsor finance business.",
+  },
+  { year: 2016, text: "Northleaf Capital Partners acquires a 16% stake." },
+  { year: 2017, text: "Antares raises its first CLO ($2.1B)." },
+  {
+    year: 2020,
+    text: "GCU closes Senior Loan Fund with ~$10B purchasing power.",
+  },
+  {
+    year: 2021,
+    text: "GCU becomes a signatory to Responsible Investment Principles.",
+  },
+  {
+    year: 2023,
+    text: "Launches Liquid Credit business and expands coverage into UK & Europe.",
+  },
+  { year: 2024, text: "Launches U.S. private wealth strategy." },
+  { year: 2025, text: "Launches flagship public private credit fund ABDC." },
 ];
 
 export const services = [
   {
-    title: "Photography Master Class",
-    description:
-      "Learn how to capture lighting, moments, angles, and editing techniques to bring your creative vision to life.",
-    image: PHOTO_31,
+    title: "Investment Management",
+    description: [
+      "Review and analyze your existing portfolio",
+      "Complete Risk and Return Assessment",
+      "Confirm your investment strategy",
+    ],
+    image: "images/image4.jpg",
   },
   {
-    title: "Film Making & Editing",
-    description:
-      "Dive into the filmmaking process, covering scripting, directing, shooting, and post-production editing mastery.",
-    image: PHOTO_16,
+    title: "Investment Transition",
+    description: [
+      "Establish relationships & coordinate asset transfers",
+      "Formulate tax-efficient transition plan",
+      "Document investment policy statement",
+    ],
+    image: "images/finance.png",
   },
   {
-    title: "Podcast Creation",
-    description:
-      "Discover how to record, create, edit, and market professional podcasts, turning ideas into sound that speaks.",
-    image: PHOTO_33,
+    title: "Investment Management",
+    description: [
+      "Monitor and manage portfolio",
+      "Systemically rebalance portfolio",
+      "Proactively manage your tax liability",
+    ],
+    image: "images/image5.jpg",
   },
   {
-    title: "Photography Master Class",
-    description:
-      "Learn how to capture lighting, moments, angles, and editing techniques to bring your creative vision to life.",
-    image: wifey,
+    title: "Portfolio Review",
+    description: [
+      "Review progress regularly",
+      "Re-affirm alignment of portfolio with your plan",
+      "Update portfolio and investment policy statement",
+    ],
+    image: "images/image3.jpg",
   },
   {
-    title: "Film Making & Editing",
-    description:
-      "Dive into the filmmaking process, covering scripting, directing, shooting, and post-production editing mastery.",
-    image: camera,
+    title: "Advisory Services",
+    description: [
+      "Design and implement portfolio",
+      "Re-affirm alignment of portfolio with your plan",
+      "Update portfolio and investment policy statement",
+    ],
+    image: "images/GCU35.jpg",
   },
 ];
 
-export const testimonials = [
+export const principles = [
   {
-    rating: 5,
-    text: "Professional, efficient, and creative—everything you want in a production partner. They brought our brand story to life with visuals that truly connect with our audience. Couldn’t have asked for a smoother process or better results.",
-    name: "~Princess Omobo",
+    title: "Fundamental Research",
+    image: "/images/GCU10.webp",
+    points: [
+      "Disciplined credit selection, a core value of GCUs’ philosophy",
+      "Consistent investment approach driven by fundamental credit underwriting",
+      "Extensive analysis of transaction structure, loan documentation, collateral valuation and protections",
+    ],
   },
   {
-    rating: 5,
-    text: "Professional, efficient, and creative—everything you want in a production partner. They brought our brand story to life with visuals that truly connect with our audience. Couldn’t have asked for a smoother process or better results.",
-    name: "~Princess Omobo",
+    title: "Active Management",
+    image: "/images/GCU23.webp",
+    points: [
+      "Diligent monitoring of investments, regardless of size, rating or sector",
+      "Optimization of portfolios through active trading while maintaining buy and sell discipline",
+      "Capitalizing on market inefficiencies and relative value opportunities",
+    ],
   },
   {
-    rating: 3,
-    text: "Professional, efficient, and creative—everything you want in a production partner. They brought our brand story to life with visuals that truly connect with our audience. Couldn’t have asked for a smoother process or better results.",
-    name: "~Princess Omobo",
-  },
-  {
-    rating: 5,
-    text: "Professional, efficient, and creative—everything you want in a production partner. They brought our brand story to life with visuals that truly connect with our audience. Couldn’t have asked for a smoother process or better results.",
-    name: "~Princess Omobo",
-  },
-  {
-    rating: 4,
-    text: "Professional, efficient, and creative—everything you want in a production partner. They brought our brand story to life with visuals that truly connect with our audience. Couldn’t have asked for a smoother process or better results.",
-    name: "~Princess Omobo",
+    title: "Capital Preservation",
+    image: "/images/GCU9.webp",
+    points: [
+      "An acute focus on seeking downside protection and capital preservation",
+      "Rigorous protection of invested principal and margin of safety in the event of default",
+      "Analysis of capacity to repay principal and sufficient enterprise value to cover debt",
+    ],
   },
 ];
 
 export const courses = [
   {
-    title: "Photography Masterclass",
+    title: "Capital Markets Transaction Advisory Services",
     description:
-      "Learn composition, lighting, camera settings, and editing to create compelling images across various styles – from portrait to product and event photography.",
-    image: black,
+      "Our company offers a range of services to help listed entities understand and comply with their obligations in the context of a transaction. Our capital markets team has the expertise and experience to guide you through the deal process, ensuring that all local regulatory requirements are met.",
+    image: "images/mihaiVlasceanu.jpg",
   },
   {
-    title: "Film making & Editing",
+    title: "International Business Loans",
     description:
-      "Dive into the filmmaking process, covering scriptwriting, directing, cinematography, and post-production using industry-standard tools.",
-    image: PHOTO_35,
+      "We help businesses secure international funding from banks andinstitutions. Our team can structure a debt system to help businesses pay back investors and support their growth. We offer this service to businesses looking to pursue new or existing bankable projects or services.",
+    image: "images/finance.png",
   },
   {
-    title: "Podcast Creation",
+    title: "Proof Of Funds",
     description:
-      "Discover how to create, record, and publish professional podcasts. Build your confidence on the mic with voice training and storytelling techniques.",
-    image: content,
+      "At GCU Enterprise, our Proof of Funds service is designed to empower businesses in food production, processing, and general merchandise to secure contracts and trade opportunities with confidence. We provide verified financial instruments that demonstrate funding capability for large-scale supply deals and project bids. Through our trusted banking network, clients can access secure proof of capital to support transactions, build credibility, and strengthen business partnerships. Our process ensures transparency, compliance, and reliability position in you for success in both local and international markets.",
+    image: "images/image4.jpg",
   },
   {
-    title: "Studio Lighting Techniques",
+    title: "Agricultural Finance",
     description:
-      "Understand lighting setups for photography and video. Learn to control shadows, highlights, and color temperature for studio and location shoots.",
-    image: lightbulbs,
+      "GCU Finance issues Documentary Letters of Credit (DLCs) from DBS Singapore, totalling USD 2.9 million, to enable the export of Agro-logistics Network in Mumbai to various parts of the world, including Hong Kong, Brazil, and the USA.",
+    image: "images/GCU17.webp",
   },
   {
-    title: "Creative Branding",
+    title: "Oil & Gas Finance",
     description:
-      "Learn how to package your skills, market your work, and communicate the brand that attracts the right clients and collaborators.",
-    image: PHOTO_1,
-  },
-];
-
-export const TrainingTestimonial = [
-  {
-    image: jenny,
-    name: "Joel Smart",
-    text: "Enrolling in the filmmaking course at QM LAWASON STUDIOS was a game-changer for me. The hands-on experience, expert guidance, and studio access helped me grow faster than I imagined. I now feel confident taking on real client work.",
+      "GCU Finance issuea s USD 50 million Standby Letter of Credit (SBLC) from Societe Generale Bank to enable the Purchase of oil and gas products from Russian Refineries to Lisbon.",
+    image: "images/Money.png",
   },
   {
-    image: ose,
-    name: "David Paul Olubode",
-    text: "What stood out the most was how real and practical the training was. We weren’t just taught theory – we actually handled the equipment, worked on real projects, and got valuable feedback. It was an incredible experience.",
+    title: "Real Estate Finance",
+    description:
+      "GCU Finance issues a Standby Letter of Credit (SBLC) from JP Morgan Chase totaling USD 8.5 million to Finance a 100 Room 5 star Hotel Project in Slaski, Poland.",
+    image: "images/urban.jpg",
   },
-  {
-    image: wifey,
-    name: "John Done",
-    text: "I joined their podcast production workshop with zero background, and now I run my own podcast confidently. The sessions were practical, the team was patient, and the mentorship continued even after the class ended.",
-  },
-];
-
-export const videoFiles = [
-  "/videos/Video5.mp4",
-  "/videos/Video8.mp4",
-  "/videos/Video6.mp4",
-  "/videos/Video7.mp4",
-  "/videos/Video4.mp4",
-  "/videos/Video8.mp4",
-];
-export const videoFiles2 = [
-  "/videos/Video1.mp4",
-  "/videos/Video2.mp4",
-  "/videos/Video4.mp4",
-];
-export const equipmentItems = [
-  { title: "Full Production Kit", src: Full_production_kit },
-  { title: "Studio Rental (Hourly/Full Day)", src: Camera_rental },
-  { title: "Truck Rental", src: TRUCK },
-  { title: "Camera Rental", src: PODCAST_3 },
-  { title: "Lighting Rental", src: studio_light },
-];
-
-export const podcastImages = [
-  { src: PODCAST1 },
-  { src: PODCAST2 },
-  { src: PODCAST_3 },
 ];
 
 export const serviceIcons = {
-  "Pre-wedding shoot": <Camera className="w-4 h-4 mr-2" />,
-  "Wedding shoot": <Camera className="w-4 h-4 mr-2" />,
-  "Event Photography": <Image className="w-4 h-4 mr-2" />,
-  "Product Photography": <Briefcase className="w-4 h-4 mr-2" />,
-  "Family & Children Photography": <Users className="w-4 h-4 mr-2" />,
-  "Head Shot Photography": <Image className="w-4 h-4 mr-2" />,
-  "Wedding Videography": <Video className="w-4 h-4 mr-2" />,
-  "Equipment Rentals": <Wrench className="w-4 h-4 mr-2" />,
-  "Training & Consulting": <GraduationCap className="w-4 h-4 mr-2" />,
-  "Lighting Services": <Lightbulb className="w-4 h-4 mr-2" />,
-  "Outdoor Portrait Shoot": <Globe className="w-4 h-4 mr-2" />,
+  "Capital Market": <Camera className="w-4 h-4 mr-2" />,
+  "Advisory Service": <Camera className="w-4 h-4 mr-2" />,
+  "International Business Loan": <Image className="w-4 h-4 mr-2" />,
+  "Proof of Funds": <Briefcase className="w-4 h-4 mr-2" />,
+  "Agricultural Finance": <Users className="w-4 h-4 mr-2" />,
+  "Data Analytics": <Image className="w-4 h-4 mr-2" />,
+  "Real Estate Finance": <Video className="w-4 h-4 mr-2" />,
+  "Oil & Gas Finance": <Wrench className="w-4 h-4 mr-2" />,
+  "Training and Consultation": <GraduationCap className="w-4 h-4 mr-2" />,
+  "Cyber Security": <Lightbulb className="w-4 h-4 mr-2" />,
+  "Legal Representation": <Globe className="w-4 h-4 mr-2" />,
   Others: <Star className="w-4 h-4 mr-2" />,
 };
 
 export const team = [
   {
-    name: "Lawani Godwin",
-    role: "CEO",
-    image: PHOTO_24,
+    name: "Dr. Lê Hoàng Vữ",
+    role: "CEO/Chairman.",
+    image: "/images/le.jpg",
   },
   {
-    name: "Monisola Lisk-Corine",
-    role: "Legal Advisor / Secretary",
-    image: Secretary,
+    name: "Oliver Lombardi",
+    role: "Chief Operating Officer USA",
+    image: "/images/oliver.jpg",
   },
   {
-    name: "Iyenoluwa Adebayo",
-    role: "HR / Project Co-ordinator",
-    image: ProjectCoordinator,
+    name: "Michael D. Brinegar",
+    role: "Head Of Operation USA",
+    image: "/images/willieGil.jpg",
   },
   {
-    name: "Namdian Godswillcee",
-    role: "Studio Manager",
-    image: StudioManager,
+    name: "D. Marcus Curles",
+    role: "Head Of Opraetion Latvia",
+    image: "/images/james.jpg",
   },
   {
-    name: "Oluwayemisi Titilayo Olojokunke",
-    role: "Studio Supervisor",
-    image: supervisor,
-  },
-  {
-    name: "Njoku Uche Adebayo",
-    role: "Photographer",
-    image: Photographer,
+    name: "Lois Basil",
+    role: "Global Head of Alternative Investments",
+    image: "/images/Basil.jpg",
   },
 ];
 
@@ -240,53 +212,53 @@ export const slides = [
   {
     title: (
       <>
-        We Don’t Just Create -{" "}
-        <span className="block sm:inline bg-gradient-to-r from-[#19673B] to-[#19673B] text-transparent bg-clip-text">
-          We Tell Stories
+        Specialized Capital Solutions.{" "}
+        <span className="block sm:inline bg-gradient-to-r from-[#2519BC] to-white text-transparent bg-clip-text">
+          Certainty of Execution.
         </span>
       </>
     ),
     subtitle:
-      "At GM LAWASON STUDIOS, our passion is visual storytelling. from concept to completion, we blend creativity and precision to craft visuals that leave a lasting impression.",
-    image: PHOTO_30,
+      "GCU has consistently delivered capital solutions to middle-market, private equity-backed companies",
+    image: "images/GCU33.webp",
   },
   {
     title: (
       <>
-        Your Creative Vision,{" "}
-        <span className="block sm:inline bg-gradient-to-r from-[#19673B] to-[#19673B] text-transparent bg-clip-text">
-          Our Expertise
+        Scale, Experience and Alignment{" "}
+        <span className="block sm:inline bg-gradient-to-r from-[#2519BC] to-white text-transparent bg-clip-text">
+          Drive Opportunity
         </span>
       </>
     ),
     subtitle:
-      "We offer a wide range of professional services tailord for visual creators - from photography, studio rentals, production to editing and podcast setups.",
-    image: PHOTO_28,
+      "Built on a time-tested, credit-based underwriting approach,GCU maintains one of the largest and longest tenured portfolios of U.S. middle market, private equity-owned companies.",
+    image: "images/GCU18.webp",
   },
   {
     title: (
       <>
-        Learn. Create.{" "}
-        <span className="block sm:inline bg-gradient-to-r from-[#19673B] to-[#19673B] text-transparent bg-clip-text">
-          Grow
+        A Framework for Effective Risk{" "}
+        <span className="block sm:inline bg-gradient-to-r from-[#2519BC] to-white text-transparent bg-clip-text">
+          Management
         </span>
       </>
     ),
     subtitle:
-      "Join our industry-focused training programs and workshops designed for aspiring creatives. Learn hands-on from professionals in a real studio environment. ",
-    image: PHOTO_3,
+      "GCU is committed to Responsible Investment and integrates this approach as a framework for effective risk management. Engagement with our employees and our stakeholders helps drive our Responsible Investment efforts. ",
+    image: "images/GCU8.jpg",
   },
   {
     title: (
       <>
-        Our Work Speakes Louder{" "}
-        <span className="block sm:inline bg-gradient-to-r from-[#19673B] to-[#19673B] text-transparent bg-clip-text">
-          Than Words
+        Responsible Investment{" "}
+        <span className="block sm:inline bg-gradient-to-r from-[#2519BC] to-white text-transparent bg-clip-text">
+          Policy & Report
         </span>
       </>
     ),
     subtitle:
-      "Dive into our creative archive - a visual journey through the project we've passionately brought to life.",
-    image: PHOTO_14,
+      "Responsible Investment is integrated in our business and embedded in our identity as a leading provider of financing and investment solutions.",
+    image: "images/GCU2.jpg",
   },
 ];

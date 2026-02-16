@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logo from "../assets/Logo.png";
 import { navItems } from "../constants";
 import { Menu } from "Lucide-react";
 import { NavLink } from "react-router-dom";
@@ -10,15 +9,19 @@ const Navbar = () => {
 
   const getNavLinkClass = ({ isActive }) =>
     isActive
-      ? "text-emerald-500 font-semibold border-b-2 border-emerald-500 pb-1"
-      : "hover:text-emerald-500";
+      ? "text-[#02066F] font-semibold border-b-2 border-[#2519BC] pb-1"
+      : "hover:text-[#02066F]";
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <img src={Logo} alt="Logo" className="h-12 w-auto mr-2" />
+            <img
+              src="images/GCU_logo.png"
+              alt="Logo"
+              className="h-12 w-auto mr-2"
+            />
           </div>
 
           {/* Desktop Nav Links */}
@@ -38,8 +41,8 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "py-2 px-4 rounded-md bg-gradient-to-r from-[#19673B] to-emerald-600 text-white"
-                  : "py-2 px-4 rounded-md bg-gradient-to-r from-[#19673B] to-green-600 text-white"
+                  ? "py-2 px-4 rounded-md bg-gradient-to-r from-[#02066F] to-white-600 text-white"
+                  : "py-2 px-4 rounded-md bg-gradient-to-r from-[#02066F] to-white-600 text-white"
               }
             >
               CONTACT US
@@ -53,7 +56,7 @@ const Navbar = () => {
               aria-label="Toggle Mobile Menu"
               className="text-white focus:outline-none"
             >
-              <Menu size={24} className="text-[#2a2727]" />
+              <Menu size={24} className="text-[#02066F]" />
             </button>
           </div>
         </div>

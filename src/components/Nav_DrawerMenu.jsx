@@ -13,7 +13,7 @@ const Nav_DrawerMenu = ({ isOpen, onClose, navItems }) => {
             animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black z-40"
+            className="fixed inset-0 z-40"
           />
 
           {/* Drawer Panel */}
@@ -22,21 +22,41 @@ const Nav_DrawerMenu = ({ isOpen, onClose, navItems }) => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 h-full w-3/4 sm:w-2/5 bg-black/90 text-white z-50 p-8 shadow-lg"
+            className="fixed top-0 right-0 h-full w-3/4 sm:w-2/5 bg-[#002366] text-white z-50 shadow-lg"
           >
-            <div className="flex justify-end">
+            {/* Header */}
+            <div className="flex justify-end p-5">
               <button onClick={onClose} aria-label="Close Menu">
                 <X size={24} />
               </button>
             </div>
 
-            <ul className="mt-8 space-y-6 text-lg">
+            {/* Navigation */}
+            <ul
+              className="
+                w-full
+                mt-2
+                space-y-6
+                text-lg
+                bg-[#002366]
+                backdrop-blur-md
+                px-8 py-6
+                shadow-lg
+              "
+            >
               {navItems.map((item, index) => (
                 <li key={index}>
                   <NavLink
                     to={item.href}
                     onClick={onClose}
-                    className="hover:text-emerald-400 transition-colors"
+                    className="
+                      block
+                      text-white
+                      font-medium
+                      tracking-wide
+                      hover:text-blue-400
+                      transition-colors
+                    "
                   >
                     {item.label}
                   </NavLink>
@@ -44,17 +64,16 @@ const Nav_DrawerMenu = ({ isOpen, onClose, navItems }) => {
               ))}
             </ul>
 
-            <div className="mt-6">
+            {/* CTA */}
+            <div className="p-8 mt-auto">
               <NavLink
                 to="/contact"
-                className="block bg-gradient-to-r from-[#19673B] to-green-600 py-2 px-4 rounded-md text-center"
                 onClick={onClose}
+                className="block bg-gradient-to-r from-[#02066f] to-[#002366] py-2 px-4 rounded-md text-center text-white font-medium"
               >
                 Contact Us
               </NavLink>
             </div>
-
-            <p className="mt-6 text-sm text-center">8219358649</p>
           </Motion.div>
         </>
       )}

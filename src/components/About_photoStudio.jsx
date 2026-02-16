@@ -1,9 +1,5 @@
-import Photographer from "../assets/photographer.jpg";
-import pixel_40 from "../assets/pixel_40.jpg";
-import black from "../assets/black.jpg";
-import young from "../assets/young.jpg";
-import ContactButton from "./contactButton";
-import { motion } from "framer-motion";
+import ContactButton from "../constants/contactButton";
+import { motion as Motion } from "framer-motion";
 
 const About_photoStudio = () => {
   return (
@@ -11,37 +7,35 @@ const About_photoStudio = () => {
       <div className="w-full bg-white-100 py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           {/* Left Section */}
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <h1 className="text-2xl md:text-2xl font-bold text-gray-500 mb-6 leading-tight">
-              Photography Studio
+              Why GCU Enterprise
             </h1>
             <p className="mt-6 text-gray-600 mb-6 leading-relaxed">
-              Our photography studio is built for creators who want more than
-              just a space,, we turn moments into masterpieces. Specializing in
-              high-quality photography and cinematography, we blend creativity
-              with technical excellence to bring your vision to life.
+              We believe our integrated, team-based approach to financial
+              planning sets GCU Enterprise Wealth Management apart from other
+              wealth managers. Our clients work with a dedicated advisor who
+              coordinates with in-house specialists in estate planning,
+              Financial Trading, tax strategy, investments, charitable giving,
+              and more. We also have professionals with deep experience helping
+              clients navigate complex life transitions like divorce and caring
+              for aging family members. This collaborative model ensures that no
+              one makes a financial decision in isolation. As a majority
+              employee-owned firm, we’re personally invested in our clients’
+              long-term success and well-being
             </p>
-            <p className="mt-6 text-gray-600 mb-6 leading-relaxed">
-              With a passion for storytelling and cutting-edge equipment, we
-              deliver stunning visuals that captivate and inspire. Whether it’s
-              a brand project, event, or personal shoot, we ensure every frame
-              tells a story worth remembering.
-            </p>
-            <p className="mt-6 mb-6 leading-relaxed text-gray-600">
-              Whether you’re a brand, Photographer, or content creator, this is
-              the space where standout visuals come to life.
-            </p>
+
             <ContactButton />
-          </motion.div>
+          </Motion.div>
 
           {/* Right Image Section */}
 
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -50,8 +44,13 @@ const About_photoStudio = () => {
           >
             <div className="flex flex-col">
               <div className="grid grid-cols-2 grid-rows-1 w-full gap-0">
-                {[Photographer, pixel_40, black, young].map((img, idx) => (
-                  <motion.img
+                {[
+                  "images/coachspace.jpg",
+                  "images/loanImages.jpg",
+                  "images/GCU14.webp",
+                  "images/testimonialImage.jpg",
+                ].map((img, idx) => (
+                  <Motion.img
                     key={idx}
                     src={img}
                     alt="Photographer"
@@ -63,9 +62,9 @@ const About_photoStudio = () => {
                   />
                 ))}
               </div>
-              <div className="w-full h-6 bg-emerald-700 mt-0 rounded-b-lg"></div>
+              <div className="w-full h-6 bg-[#02066f] mt-0 rounded-b-lg"></div>
             </div>
-          </motion.div>
+          </Motion.div>
         </div>
       </div>
     </div>
