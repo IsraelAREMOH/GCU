@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Laugh, Star } from "Lucide-react";
+import { BriefcaseBusiness, Laugh, Star } from "lucide-react";
 import { motion as Motion } from "framer-motion";
 
 const fadeInUp = {

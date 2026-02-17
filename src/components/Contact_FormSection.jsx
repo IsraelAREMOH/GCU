@@ -1,5 +1,5 @@
 import { serviceIcons } from "../constants";
-import { MapPin, User, Phone, Mail, Building, ArrowDown } from "Lucide-react";
+import { MapPin, User, Phone, Mail, Building, ArrowDown } from "lucide-react";
 import { useState } from "react";
 
 const Contact_FormSection = () => {

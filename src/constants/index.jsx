@@ -9,7 +9,7 @@ import {
   GraduationCap,
   Globe,
   Star,
-} from "Lucide-react";
+} from "lucide-react";
 
 export const navItems = [
   { label: "Home", href: "/" },

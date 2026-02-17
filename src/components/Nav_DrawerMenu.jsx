@@ -1,6 +1,6 @@
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { X } from "Lucide-react";
+import { X } from "lucide-react";
 
 const Nav_DrawerMenu = ({ isOpen, onClose, navItems }) => {
   return (

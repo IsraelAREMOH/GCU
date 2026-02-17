@@ -1,4 +1,4 @@
-import { MessageSquare, ArrowUp } from "Lucide-react";
+import { MessageSquare, ArrowUp } from "lucide-react";
 import { useState } from "react";
 import ContactModal from "../constants/ContactModal";
 

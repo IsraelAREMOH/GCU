@@ -1,4 +1,4 @@
-import { X } from "Lucide-react";
+import { X } from "lucide-react";
 import Contact_FormSection from "../components/Contact_FormSection";
 
 const ContactModal = ({ onClose }) => {

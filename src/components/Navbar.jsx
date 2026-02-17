@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navItems } from "../constants";
-import { Menu } from "Lucide-react";
+import { Menu } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Nav_DrawerMenu from "./Nav_DrawerMenu";
 
