@@ -70,8 +70,8 @@ const Contact_FormSection = () => {
       <div className="bg-[#0B102A] text-[#f4f6ff] min-h-screen px-4 py-8 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold">
-            Studio <span className="text-[#02066f]">Moments</span>
-          </h1>{" "}
+            Let's Hear <span className="text-[#02066f]">From You</span>
+          </h1>
           <p className="mt-2 text-gray-400 text-sm sm:text-base">
             Want to work with us?
             <br />
@@ -89,19 +89,19 @@ const Contact_FormSection = () => {
           <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
             <MapPin className="w-6 h-6 text-[#02066f] mb-2" />
             <h3 className="font-semibold text-lg mb-1">Visit Our Office</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               AIA Tower, Avenida Commercial de Macau 251, Macau Hong Kong
             </p>
           </div>
           <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
             <Phone className="w-6 h-6 text-[#02066f] mb-2" />
             <h3 className="font-semibold text-lg mb-1">Talk to a Specialist</h3>
-            <p className="text-gray-400 text-sm">+16282540690</p>
+            <p className="text-gray-300 text-sm">+16282540690</p>
           </div>
           <div className="flex flex-col items-center bg-gray-500 p-6 rounded-lg text-center">
             <Mail className="w-6 h-6 text-[#02066f] mb-2" />
             <h3 className="font-semibold text-lg mb-1">Email Studio Moments</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               customerrelation@gcuenterprise.com
             </p>
           </div>
@@ -111,7 +111,7 @@ const Contact_FormSection = () => {
           <h2 className="text-xl sm:text-2xl font-semibold text-center mb-6">
             Let’s Talk About Your Project
           </h2>
-          <p className="text-center text-gray-400 mb-8 text-sm sm:text-base">
+          <p className="text-center text-gray-500 mb-8 text-sm sm:text-base">
             Get in touch with us today and let's discuss how we can make your
             project unforgettable. Fill out the form, drop us a message and
             we’ll guide you through the next steps!
@@ -142,7 +142,7 @@ const Contact_FormSection = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Phone Number"
+                placeholder="Phone e.g (+162)"
                 required
                 className="pl-10 p-3 rounded text-gray-200 bg-gray-700 placeholder-gray-400 w-full text-sm sm:text-base"
               />
