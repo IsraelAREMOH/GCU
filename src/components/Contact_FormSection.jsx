@@ -66,6 +66,8 @@ const Contact_FormSection = () => {
     } catch (err) {
       console.log(err);
       setErrors([{ msg: "Something went wrong. Try again later." }]);
+      console.log("REAL ERROR:", err);
+      setErrors([{ msg: err.message }]);
     }
   };
   return (
