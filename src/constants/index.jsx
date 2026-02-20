@@ -198,7 +198,7 @@ export const team = [
   },
   {
     name: "D. Marcus Curles",
-    role: "Head Of Opraetion Latvia",
+    role: "Head Of Operation Latvia",
     image: "/images/james.jpg",
   },
   {
