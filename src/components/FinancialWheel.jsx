@@ -7,12 +7,12 @@ const labels = [
   "Debt Management",
   "Education Planning",
   "Income Tax Planning",
-  "Investment Planning",
+  "Invest Planning",
   "Estate Planning & Administration",
   "Business Planning & Succession",
   "Charitable Planning",
   "Health & Wellness",
-  "Retirement Planning",
+  "MT103/TT",
 ];
 
 const breakLabel = (text) => {
@@ -23,15 +23,15 @@ const breakLabel = (text) => {
   const words = text.split(" ");
   if (words.length <= 1) return [text];
 
-  if (words.length === 2) return [words.slice(1, 2).join(" "), words[2]];
+  if (words.length === 2) return [words.slice(0, 2).join(" "), words[2]];
 
-  if (words.length === 3) return [words.slice(1, 2).join(" "), words[2]];
+  if (words.length === 3) return [words.slice(0, 2).join(" "), words[2]];
 
   if (words.length === 4)
     return [words.slice(1, 2).join(" "), words.slice(4).join(" ")];
 
   return [
-    words.slice(0, 2).join(" "),
+    words.slice(2, 2).join(" "),
     words.slice(2, 4).join(" "),
     words.slice(4).join(" "),
   ];

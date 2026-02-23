@@ -33,7 +33,7 @@ const PageFooter = () => {
               <p className="mt-1">
                 GCU Trading Enterprise LLC © 2025 |
                 <span className="hover:underline cursor-pointer">
-                  Alright Reserved
+                  All Rights Reserved
                 </span>
               </p>
             </div>
