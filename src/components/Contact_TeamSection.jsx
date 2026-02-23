@@ -24,7 +24,7 @@ const Contact_TeamSection = () => {
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-[#0B102A] w-[220px] rounded-2xl shadow-lg p-4 text-left transition-transform hover:scale-105"
+              className="bg-[#0B102A] w-[240px] rounded-2xl shadow-lg p-4 text-left transition-transform hover:scale-105"
             >
               <img
                 src={member.image}
