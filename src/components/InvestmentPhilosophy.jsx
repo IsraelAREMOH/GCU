@@ -10,8 +10,8 @@ const InvestmentPhilosophy = () => {
             Investment Philosophy
           </h2>
           <p className="text-sm text-gray-600">
-            Antares strives to implement the following key principles in our
-            business:
+            GCU Enterprise strives to implement the following key principles in
+            our business:
           </p>
         </div>
 

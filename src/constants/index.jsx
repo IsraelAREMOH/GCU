@@ -172,7 +172,7 @@ export const courses = [
     title: "Real Estate Finance",
     description:
       "GCU Finance issues a Standby Letter of Credit (SBLC) from JP Morgan Chase totaling USD 8.5 million to Finance a 100 Room 5 star Hotel Project in Slaski, Poland.",
-    image: "images/urban.jpg",
+    image: "images/GCU99.jpeg",
   },
 ];
 
