@@ -55,11 +55,11 @@ const Service_courseSection = () => {
       </Motion.div>
 
       {/* Top 3 Courses */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16 px-0">
         {courses.slice(0, 3).map((course, index) => (
           <Motion.div
             key={course.title}
-            className="bg-white text-gray-500 rounded-lg p-6 flex flex-col items-center"
+            className="bg-white text-gray-500 rounded-lg p-2 flex flex-col items-center"
             variants={getEntranceVariant(index)}
             initial="hidden"
             whileInView="visible"
@@ -88,11 +88,11 @@ const Service_courseSection = () => {
       </div>
 
       {/* Additional Courses */}
-      <div className="flex flex-col sm:flex-row justify-center max-w-6xl mx-auto p-6 gap-6">
+      <div className="flex flex-col sm:flex-row justify-center max-w-6xl mx-auto gap-6">
         {courses.slice(3).map((course, index) => (
           <Motion.div
             key={course.title}
-            className="bg-white text-gray-500 rounded-lg p-6 flex flex-col justify-between w-full sm:w-[350px]"
+            className="bg-white text-gray-500 rounded-lg p-2 flex flex-col justify-between w-full sm:w-[350px]"
             variants={getEntranceVariant(index)}
             initial="hidden"
             whileInView="visible"
