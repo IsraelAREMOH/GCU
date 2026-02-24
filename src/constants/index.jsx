@@ -55,7 +55,7 @@ export const services = [
     title: "MT103/TT",
     description: [
       "GCU offers payments that are safer,",
-      "more interoperable across rails and borders",
+      "more interoperable across rails and borders,",
       "easier to reconcile, and clearer on FX outcomes",
     ],
     image: "images/GCUMT103.png",
