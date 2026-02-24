@@ -63,8 +63,8 @@ export const services = [
   {
     title: "Investment Management",
     description: [
-      "Review and analyze your existing portfolio",
-      "Complete Risk and Return Assessment",
+      "Review and analyze your existing portfolio, ",
+      "Complete Risk and Return Assessment, ",
       "Confirm your investment strategy",
     ],
     image: "images/image4.jpg",
@@ -72,8 +72,8 @@ export const services = [
   {
     title: "Investment Transition",
     description: [
-      "Establish relationships & coordinate asset transfers",
-      "Formulate tax-efficient transition plan",
+      "Establish relationships & coordinate asset transfers, ",
+      "Formulate tax-efficient transition plan, ",
       "Document investment policy statement",
     ],
     image: "images/finance.png",
@@ -81,8 +81,8 @@ export const services = [
   {
     title: "Investment Management",
     description: [
-      "Monitor and manage portfolio",
-      "Systemically rebalance portfolio",
+      "Monitor and manage portfolio, ",
+      "Systemically rebalance portfolio, ",
       "Proactively manage your tax liability",
     ],
     image: "images/image5.jpg",
@@ -90,8 +90,8 @@ export const services = [
   {
     title: "Portfolio Review",
     description: [
-      "Review progress regularly",
-      "Re-affirm alignment of portfolio with your plan",
+      "Review progress regularly, ",
+      "Re-affirm alignment of portfolio with your plan, ",
       "Update portfolio and investment policy statement",
     ],
     image: "images/image3.jpg",
@@ -99,8 +99,8 @@ export const services = [
   {
     title: "Advisory Services",
     description: [
-      "Design and implement portfolio",
-      "Re-affirm alignment of portfolio with your plan",
+      "Design and implement portfolio, ",
+      "Re-affirm alignment of portfolio with your plan, ",
       "Update portfolio and investment policy statement",
     ],
     image: "images/GCU35.jpg",
