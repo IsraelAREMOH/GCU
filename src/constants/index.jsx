@@ -1,13 +1,15 @@
 import {
-  Camera,
-  Video,
+  BadgeDollarSign,
+  Info,
   Lightbulb,
+  MapPinHouse,
+  Tractor,
   Briefcase,
-  Users,
-  Image,
-  Wrench,
+  Section,
+  FolderSync,
+  Receipt,
+  Handshake,
   GraduationCap,
-  Globe,
   Star,
 } from "lucide-react";
 
@@ -166,18 +168,28 @@ export const courses = [
 ];
 
 export const serviceIcons = {
-  "Capital Market": <Camera className="w-4 h-4 mr-2" />,
-  "Advisory Service": <Camera className="w-4 h-4 mr-2" />,
-  "International Business Loan": <Image className="w-4 h-4 mr-2" />,
-  "Proof of Funds": <Briefcase className="w-4 h-4 mr-2" />,
-  "Agricultural Finance": <Users className="w-4 h-4 mr-2" />,
-  "MT103/TT": <Image className="w-4 h-4 mr-2" />,
-  "Real Estate Finance": <Video className="w-4 h-4 mr-2" />,
-  "Oil & Gas Finance": <Wrench className="w-4 h-4 mr-2" />,
-  "Training and Consultation": <GraduationCap className="w-4 h-4 mr-2" />,
-  "Cyber Security": <Lightbulb className="w-4 h-4 mr-2" />,
-  "Legal Representation/Analytics": <Globe className="w-4 h-4 mr-2" />,
-  Others: <Star className="w-4 h-4 mr-2" />,
+  "Capital Market": (
+    <BadgeDollarSign color="#02066f" className="w-4 h-4 mr-2" />
+  ),
+  "Advisory Service": <Info color="#02066f" className="w-4 h-4 mr-2" />,
+  "International Business Loan": (
+    <Handshake color="#02066f" className="w-4 h-4 mr-2" />
+  ),
+  "Proof of Funds": <Briefcase color="#02066f" className="w-4 h-4 mr-2" />,
+  "Agricultural Finance": <Tractor color="#02066f" className="w-4 h-4 mr-2" />,
+  "MT103/TT": <FolderSync color="#02066f" className="w-4 h-4 mr-2" />,
+  "Real Estate Finance": (
+    <MapPinHouse color="#02066f" className="w-4 h-4 mr-2" />
+  ),
+  "Oil & Gas Finance": <Receipt color="#02066f" className="w-4 h-4 mr-2" />,
+  "Training and Consultation": (
+    <GraduationCap color="#02066f" className="w-4 h-4 mr-2" />
+  ),
+  "Cyber Security": <Lightbulb color="#02066f" className="w-4 h-4 mr-2" />,
+  "Legal Representation/Analytics": (
+    <Section color="#02066f" className="w-4 h-4 mr-2" />
+  ),
+  Others: <Star color="#02066f" className="w-4 h-4 mr-2" />,
 };
 
 export const team = [
