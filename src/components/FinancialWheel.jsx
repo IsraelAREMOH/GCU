@@ -2,7 +2,7 @@ import React from "react";
 
 const labels = [
   "Health & Wellness",
-  "Retirement Planning",
+  "Adivsory",
   "Risk Management & Asset Protection",
   "Debt Management",
   "Education Planning",
@@ -11,7 +11,7 @@ const labels = [
   "Estate Planning & Administration",
   "Business Planning & Succession",
   "Charitable Planning",
-  "Health & Wellness",
+  "Cyber Security",
   "MT103/TT",
 ];
 
