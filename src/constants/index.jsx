@@ -52,6 +52,15 @@ export const timeline = [
 
 export const services = [
   {
+    title: "MT103/TT",
+    description: [
+      "GCU offers payments that are safer,",
+      "more interoperable across rails and borders",
+      "easier to reconcile, and clearer on FX outcomes",
+    ],
+    image: "images/image4.jpg",
+  },
+  {
     title: "Investment Management",
     description: [
       "Review and analyze your existing portfolio",

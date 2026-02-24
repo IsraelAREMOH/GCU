@@ -1,7 +1,7 @@
 const issues = [
   {
     id: "Complexity",
-    label: "Complexity",
+    label: "MT103/TT",
     Image: "images/Chess-Knight-Icon.webp",
   },
   {
