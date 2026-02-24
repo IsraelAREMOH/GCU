@@ -171,12 +171,12 @@ export const serviceIcons = {
   "International Business Loan": <Image className="w-4 h-4 mr-2" />,
   "Proof of Funds": <Briefcase className="w-4 h-4 mr-2" />,
   "Agricultural Finance": <Users className="w-4 h-4 mr-2" />,
-  "Data Analytics": <Image className="w-4 h-4 mr-2" />,
+  "MT103/TT": <Image className="w-4 h-4 mr-2" />,
   "Real Estate Finance": <Video className="w-4 h-4 mr-2" />,
   "Oil & Gas Finance": <Wrench className="w-4 h-4 mr-2" />,
   "Training and Consultation": <GraduationCap className="w-4 h-4 mr-2" />,
   "Cyber Security": <Lightbulb className="w-4 h-4 mr-2" />,
-  "Legal Representation": <Globe className="w-4 h-4 mr-2" />,
+  "Legal Representation/Analytics": <Globe className="w-4 h-4 mr-2" />,
   Others: <Star className="w-4 h-4 mr-2" />,
 };
 
