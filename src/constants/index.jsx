@@ -58,7 +58,7 @@ export const services = [
       "more interoperable across rails and borders",
       "easier to reconcile, and clearer on FX outcomes",
     ],
-    image: "images/image4.jpg",
+    image: "images/GCUMT103.png",
   },
   {
     title: "Investment Management",
