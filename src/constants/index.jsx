@@ -215,7 +215,7 @@ export const team = [
   {
     name: "Michael D. Brinegar",
     role: "Head Of Operation USA",
-    image: "/images/willieGil.jpg",
+    image: "/images/Gunter.jpg",
   },
   {
     name: "D. Marcus Curles",
